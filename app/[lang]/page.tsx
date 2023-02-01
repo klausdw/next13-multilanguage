@@ -13,7 +13,9 @@ export default async function Home({
 
   return (
     <div>
-      <h1>{dictionary.name}</h1>
+      <h1 className="text-3xl font-bold underline text-red-600">
+        {dictionary.name}
+      </h1>
     </div>
   );
 }
