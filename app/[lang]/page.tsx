@@ -3,6 +3,7 @@ import { Locale } from "@/i18n-config";
 import Image from "next/image";
 import imgDe from "@/public/assets/flags/de.jpg";
 import imgEn from "@/public/assets/flags/en.jpg";
+import DownloadButton from "@/app/[lang]/components/DownloadButton";
 
 export default async function Home({
   params: { lang },
@@ -13,9 +14,7 @@ export default async function Home({
 
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-red-600">
-        {dictionary.name}
-      </h1>
+      <DownloadButton dictionary={dictionary} />
     </div>
   );
 }
