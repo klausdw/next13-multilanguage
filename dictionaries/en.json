@@ -1,4 +1,8 @@
 {
-  "name": "en",
-  "download": "Download as PDF"
+  "name": "Klaus Dantas Wagner",
+  "download": "Download as PDF",
+  "download-small": "Download",
+  "dev": "Frontend Developer / Fullstack",
+  "nationality": "Nationality:",
+  "contact": "Contact"
 }
