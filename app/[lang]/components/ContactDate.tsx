@@ -1,10 +1,22 @@
 import { Props } from "@/interfaces/interfaces";
+import { MapPinIcon } from "@heroicons/react/24/outline";
+import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 const ContactDate: React.FC<Props> = ({ dictionary }) => {
   const kontaktDate = [
-    { title: "🏠", value: "Berlin" },
-    { title: "📞", value: "+491718090264" },
-    { title: "✉️", value: "klausdw@outlook.com" },
+    {
+      title: <MapPinIcon className="h-4 w-4 text-blue-500" />,
+      value: "Berlin",
+    },
+    {
+      title: <DevicePhoneMobileIcon className="h-4 w-4 text-blue-500" />,
+      value: "+491718090264",
+    },
+    {
+      title: <EnvelopeIcon className="h-4 w-4 text-blue-500" />,
+      value: "klausdw@outlook.com",
+    },
     { title: `${dictionary.nationality}`, value: "🇩🇪 🇧🇷" },
   ];
   return (

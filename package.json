@@ -15,6 +15,7 @@
     "server-only": "0.0.1"
   },
   "devDependencies": {
+    "@heroicons/react": "^2.0.14",
     "@types/negotiator": "0.6.1",
     "@types/node": "^18.11.5",
     "@types/react": "^18.0.23",
