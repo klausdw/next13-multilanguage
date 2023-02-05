@@ -2,7 +2,83 @@
   "name": "Klaus Dantas Wagner",
   "download": "Download as PDF",
   "download-small": "Download",
-  "dev": "Frontend Developer / Fullstack",
+  "dev": "Software developer",
   "nationality": "Nationality:",
-  "contact": "Contact"
+  "contact": "Contact",
+  "about": "About me",
+  "aboutText": "My first Website built with Adobe Dreamweaver in 2009 for my former church. During my studies in print and media technology at Beuth University, 5 semesters (not completed), I gained a deeper understanding of the web world. This led to the opportunity to work with esf-print, including their online designer and Magento shop. In March 2020, I started my Bootcamp as a full-stack developer and have since been continuously learning and deepening my skills in the JS world, specifically with Next.js, React, Unit, and end-to-end testing.",
+  "techstack": " My Techstack:",
+  "languages": {
+    "de": "German",
+    "pt": "Portuguese",
+    "es": "Spanish",
+    "en": "English",
+    "h1": "Languages"
+  },
+  "work-h1": "Experience",
+  "work": [
+    {
+      "title": "Frontend developer",
+      "company": "kimeta GmbH",
+      "location": "Darmstadt - Remote",
+      "website": "https://kimeta.de",
+      "duration": "01/22 - aktuell",
+      "description": "1) Umwandlung sowie Ablösung der Website von C# in React, Next.js \n 2) SEO Performance - Code Splitting, Analyse von Chunks(Webpack), Reduzierung von CLS, FCP, LCP, Blocking Time adfadsf \n 3) Multi-Mandanten: Ein Repository, ein Projekt für mehreren gleichzeitig Mandanten",
+      "techstack": "React, Next.js, TypeScript, \n Unit Test - Jest / E2E Test - Puppeteer, \n Docker - Swarm GitLab / Vercel / CI - CD \n GraphQL / CMS"
+    },
+    {
+      "title": "Frontend developer",
+      "company": "PSI Software AG",
+      "location": "Berlin - Remote",
+      "website": "https://psi.de",
+      "duration": "09/21 - 12/21",
+      "description": "Wartung und Weiterentwicklung der Software \n Software basierte auf Angular.js, TypeScript \n Weiterentwicklung des Web-UI \n Konzeption und Entwicklung neuer Webapplikationen \n Kundenanforderungen und Erarbeitung von Lösungen",
+      "techstack": "AngualarJS, TypeScript"
+    },
+    {
+      "title": "Freelancer - Fullstack developer",
+      "company": null,
+      "location": null,
+      "website": "https://github.com/klausdw",
+      "duration": "10/20 - 09/21",
+      "description": "Fullstack developer \n Erstellung sowie Deploy von Websiten \n SEO Performace",
+      "techstack": "React, Next.js, TypeScript, \n MongoDB, Express, Node.js, GraphQL \n CMS, UX, UI, SEO"
+    },
+    {
+      "title": "Team Lead",
+      "company": "esf-print Druckerei",
+      "location": "Berlin",
+      "website": "https://esf-print.de",
+      "duration": "03/16 - 03/20",
+      "description": "Weiterentwicklung des Websites \n Programmieren von Layouts, Vorlagen für Online Shop \n Adobe Illustrator, Photoshop, InDesign, PitStop, Acrobat Pro \n Datenbanksystems \n Kontrolle der Qualitätssicherung \n Prozessoptimierung \n Strategische Planung und Prozessentwicklung",
+      "techstack": "PHP, HTML, CSS, File Maker, Apple Script, SQL, Strato"
+    }
+  ],
+  "education-title": "Education",
+  "education": [
+    {
+      "title": "Full Stack developer - Bootcamp",
+      "institute": "Alfa Training",
+      "location": "Berlin",
+      "duration": "05/20 - 10/20",
+      "href": "https://www.alfatraining.de/",
+      "website": "www.alfatraining.de"
+    },
+    {
+      "title": "Print and Media Technology (5 Semester)",
+      "institute": "Beuth Hochschule",
+      "location": "Berlin",
+      "duration": "07/14 - 12/16",
+      "href": "https://www.bht-berlin.de/b-dmt",
+      "website": "www.bht-berlin.de"
+    },
+    {
+      "title": "Education: Print and Media Technology",
+      "institute": "SENAI",
+      "location": "Bauru - São Paulo",
+      "duration": "01/07 - 12/09",
+      "href": "https://bauru.sp.senai.br",
+      "website": "www.bauru.sp.senai.br"
+    }
+  ]
 }

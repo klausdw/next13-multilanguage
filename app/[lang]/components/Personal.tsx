@@ -1,6 +1,6 @@
 import { Props } from "@/interfaces/interfaces";
 import Image from "next/image";
-import applicationPicture from "../../../public/bewerbungsbild.jpg";
+import applicationPicture from "@/public/bewerbungsbild.jpg";
 
 const Personal: React.FC<Props> = ({ dictionary }) => {
   return (
@@ -10,18 +10,15 @@ const Personal: React.FC<Props> = ({ dictionary }) => {
         <Image
           src={applicationPicture}
           alt="profil"
-          className="absolute -mt-16 h-16 rounded-xl border border-gray-200"
-          width={60}
-          height={100}
+          width={90}
+          className="absolute -mt-24 rounded-xl border border-gray-200"
         />
         <div className="text mb-1 font-semibold">{dictionary.name}</div>
         <div className="mb-4 text-sm text-gray-400">{dictionary.dev}</div>
         <div className="flex justify-between divide-x rounded-lg bg-blue-600 p-2 px-4 text-white">
-          <button className="">
-            <a href="/api/pdf" download="cv.pdf">
-              {dictionary["download-small"]}
-            </a>
-          </button>
+          <a href="/api/pdf" download="cv.pdf" className="1w-full">
+            {dictionary["download-small"]}
+          </a>
           <button className="pl-2">
             <a href="/api/pdf" download="cv.pdf">
               <svg
