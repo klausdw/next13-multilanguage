@@ -16,16 +16,20 @@ function getLocale(request: NextRequest): string | undefined {
 }
 
 export function middleware(request: NextRequest) {
-    if (request.nextUrl.pathname.startsWith('/_next')) return
+    const url = request.nextUrl
+    const { pathname } = url
+    if (pathname.startsWith('/_next')) return
 
-    const pathname = request.nextUrl.pathname
     const pathnameIsMissingLocale = i18n.locales.every(
         (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
     )
+
+    if (pathname.match(/(.*)\/api\/pdf/)) {
+        return NextResponse.rewrite(new URL('/api/pdf', request.url))
+    }
 
     if (pathnameIsMissingLocale) {
         const locale = getLocale(request)
         return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.url))
     }
 }
-
