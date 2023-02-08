@@ -11,7 +11,7 @@ const WorkExperience: React.FC<Props & { start: number; end: number }> = ({
   return (
     <div className="overflow-hidden rounded-xl bg-white shadow-md">
       <div className="block-section p-7">
-        <h1 className="mb-2 text-lg font-bold">{dictionary["work-h1"]}</h1>
+        <h1 className="text-lg font-bold">{dictionary["work-h1"]}</h1>
         <div className="item-section mb-2">
           <div className="company-logo">
             <i className="bx bxl-twitter text-3xl"></i>
@@ -21,10 +21,10 @@ const WorkExperience: React.FC<Props & { start: number; end: number }> = ({
               { title, company, location, duration, website, techstack },
               index
             ) => (
-              <div className="mb-5 w-full space-y-2" key={index}>
-                <div className="border-b border-gray-200"></div>
+              <div className="w-full" key={index}>
+                <div className="border-b border-gray-200 mt-2 mb-2"></div>
                 <div className="flex justify-between">
-                  <div className="space-y-1.5">
+                  <div className="space-y-4">
                     <div className="font-medium">{title}</div>
                     <div className="flex space-x-5">
                       <div className="flex items-center text-sm font-light text-gray-600">

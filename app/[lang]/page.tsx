@@ -19,19 +19,19 @@ export default async function Home({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div>
-      <DownloadButton dictionary={dictionary} />
+    <>
+      <DownloadButton dictionary={dictionary} lang={lang} />
       <LanguageButton lang={lang} />
       <Page>
         <div className="grid gap-5 lg:grid-cols-3">
           <div className="space-y-5">
-            <Personal dictionary={dictionary} />
+            <Personal dictionary={dictionary} lang={lang} />
             <ContactDate dictionary={dictionary} />
             <Skills />
           </div>
           <div className="space-y-5 lg:col-span-2">
             <AboutMe dictionary={dictionary} />
-            <WorkExperience start={0} end={3} dictionary={dictionary} />
+            <WorkExperience start={0} end={4} dictionary={dictionary} />
           </div>
         </div>
       </Page>
@@ -39,11 +39,10 @@ export default async function Home({
         <div className="grid gap-5 lg:grid-cols-3">
           <Languages dictionary={dictionary} />
           <div className="space-y-5 lg:col-span-2">
-            <WorkExperience start={3} end={4} dictionary={dictionary} />
             <Education dictionary={dictionary} />
           </div>
         </div>
       </Page>
-    </div>
+    </>
   );
 }

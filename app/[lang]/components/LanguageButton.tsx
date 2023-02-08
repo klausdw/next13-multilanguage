@@ -4,15 +4,15 @@ import imgEn from "@/public/assets/flags/usa.png";
 
 const LanguageButton: React.FC<{ lang: string }> = ({ lang }) => {
   return (
-    <div className="flex justify-end lg:w-[210mm] m-auto">
+    <div className="flex justify-end lg:w-[210mm] m-auto print:hidden">
       <div className="group inline-block justify-end relative z-10">
         <button className="py-2 px-4 rounded inline-flex gap-1 items-center">
           {lang === "de" ? (
-            <a href="/de">
+            <a href="/de" rel="nofollow">
               <Image src={imgDe} alt="de" width={40} height={40} />
             </a>
           ) : (
-            <a href="/en">
+            <a href="/en" rel="nofollow">
               <Image src={imgEn} alt="en" width={40} height={40} />
             </a>
           )}
@@ -25,11 +25,19 @@ const LanguageButton: React.FC<{ lang: string }> = ({ lang }) => {
           </svg>
         </button>
         {lang === "en" ? (
-          <a href="/de" className="absolute py-2 px-4 group-hover:block">
+          <a
+            href="/de"
+            rel="nofollow"
+            className="absolute py-2 px-4 group-hover:block"
+          >
             <Image src={imgDe} alt="de" width={40} height={40} />
           </a>
         ) : (
-          <a href="/en" className="absolute py-2 px-4 group-hover:block">
+          <a
+            href="/en"
+            rel="nofollow"
+            className="absolute py-2 px-4 group-hover:block"
+          >
             <Image src={imgEn} alt="en" width={40} height={40} />
           </a>
         )}

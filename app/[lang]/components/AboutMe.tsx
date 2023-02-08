@@ -4,7 +4,7 @@ const AboutMe: React.FC<Props> = ({ dictionary }) => {
   return (
     <div className="shadow-md rounded-xl overflow-hidden bg-white p-7">
       <h2 className="text-lg font-bold mb-2">{dictionary.about}</h2>
-      <p className="text-justify text-gray-600">
+      <p className="text-justify text-gray-600 text-sm">
         {dictionary.aboutText}
         <br />
         <span className="font-bold">
@@ -16,7 +16,10 @@ const AboutMe: React.FC<Props> = ({ dictionary }) => {
         <div className="border-b border-gray-200 mt-2"></div>
         <ul className="flex space-x-2 items-center">
           <li>
-            <a href="https://www.linkedin.com/in/klaus-dantas-wagner-4242a01b8">
+            <a
+              href="https://www.linkedin.com/in/klaus-dantas-wagner-4242a01b8"
+              rel="nofollow"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -29,7 +32,7 @@ const AboutMe: React.FC<Props> = ({ dictionary }) => {
             </a>
           </li>
           <li>
-            <a href="https://github.com/klausdw">
+            <a href="https://github.com/klausdw" rel="nofollow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -42,7 +45,11 @@ const AboutMe: React.FC<Props> = ({ dictionary }) => {
             </a>
           </li>
           <li>
-            <a href="mailto:klausdw@outlook.com" className="text-blue-600">
+            <a
+              href="mailto:klausdw@outlook.com"
+              className="text-blue-600"
+              rel="nofollow"
+            >
               klausdw@outlook.com
             </a>
           </li>

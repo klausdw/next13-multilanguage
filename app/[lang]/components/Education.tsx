@@ -7,15 +7,14 @@ const Education: React.FC<Props> = ({ dictionary }) => {
     <div className="space-y-5 lg:col-span-2">
       <div className="overflow-hidden rounded-xl bg-white shadow-md">
         <div className="block-section p-7">
-          <h2 className="mb-2 text-lg font-bold">
-            {dictionary["education-title"]}
-          </h2>
+          <h2 className="text-lg font-bold">{dictionary["education-title"]}</h2>
           {education.map(
             (
               { title, institute, location, duration, href, website },
               index
             ) => (
-              <div className="w-full space-y-5 pt-4" key={index}>
+              <div className="w-full space-y-4 pb-4" key={index}>
+                <div className="border-b border-gray-200"></div>
                 <div className="flex justify-between">
                   <div className="space-y-1.5">
                     <div className="font-medium">{title}</div>
@@ -30,7 +29,7 @@ const Education: React.FC<Props> = ({ dictionary }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-auto space-y-2 sm:text-right">
+                  <div className=" mt-auto space-y-2 sm:text-right">
                     <div className="my-auto flex items-center justify-center rounded-md bg-blue-200 p-1 text-sm text-gray-600 text-gray-600">
                       <CalenderIcon />
                       <span className="pl-2">{duration}</span>
@@ -45,7 +44,6 @@ const Education: React.FC<Props> = ({ dictionary }) => {
                 >
                   {website}
                 </a>
-                <div className="border-b border-gray-200"></div>
               </div>
             )
           )}
