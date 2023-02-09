@@ -9,7 +9,7 @@ const Handler: NextApiHandler = async (req, res) => {
     const currentUrl = `${req.headers.host}`
     const protocol = req.headers["x-forwarded-proto"] || "http"
 
-    await page.goto(`https://next13-multilanguage.vercel.app//${lang}`)
+    await page.goto(`https://next13-multilanguage.vercel.app/${lang}`)
 
     const buffer = await page.pdf({
         format: 'a4',
