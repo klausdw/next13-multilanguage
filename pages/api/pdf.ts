@@ -7,7 +7,7 @@ const Handler: NextApiHandler = async (req, res) => {
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
 
-    await page.goto(`http://localhost:3000/${lang}`)
+    await page.goto(`http://${req.headers.host}/${lang}`)
 
     const buffer = await page.pdf({
         format: 'a4',
