@@ -14,16 +14,16 @@ const Handler: NextApiHandler = async (req, res) => {
         res.setHeader('Access-Control-Allow-Credentials', 'true');
         res.setHeader('Content-Type', 'application/pdf');
 
-        const browser = await puppeteer.launch({
-            args: [
-                '--ignore-certificate-errors',
-                '--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--window-size=1920,1080',
-                "--disable-accelerated-2d-canvas",
-                "--disable-gpu"],
-            ignoreHTTPSErrors: true,
-        })
+        const browser = await puppeteer.launch()
+        // { args: [
+        //     '--ignore-certificate-errors',
+        //     '--no-sandbox',
+        //     '--disable-setuid-sandbox',
+        //     '--window-size=1920,1080',
+        //     "--disable-accelerated-2d-canvas",
+        //     "--disable-gpu"],
+        // ignoreHTTPSErrors: true,}
+
         const page = await browser.newPage()
 
         await page.goto(`https://next13-multilanguage.vercel.app/${lang}`)
