@@ -4,7 +4,16 @@ import puppeteer from "puppeteer";
 const Handler: NextApiHandler = async (req, res) => {
     const lang = req.url?.split('/')[1]
 
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({
+        args: [
+            '--ignore-certificate-errors',
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--window-size=1920,1080',
+            "--disable-accelerated-2d-canvas",
+            "--disable-gpu"],
+        ignoreHTTPSErrors: true,
+    })
     const page = await browser.newPage()
     const currentUrl = `${req.headers.host}`
     const protocol = req.headers["x-forwarded-proto"] || "http"
